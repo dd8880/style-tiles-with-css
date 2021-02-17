@@ -1,8 +1,8 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,11 +14,11 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #000000;
+  --link-color: #9e2a2b;
+  --link-hover-color: #1b2a41;
+  --color-4: #473335;
+  --color-5: #e5e6e4;
 
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Droid Serif", serif;
@@ -34,8 +34,9 @@ a {
   transition: all 3s;
 }
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  background-color: var(--link-hover-color);  
+  outline: 0vh;
+  
 }
 
 button:active {
@@ -44,7 +45,6 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
 }
 html {
   font-size: 100%;
@@ -146,25 +146,23 @@ ul li:last-child {
 }
 
 .textures li {
-  height: 30vw;
-  width: 40%;
+  height: 15vw;
+  width: 10vw;
   margin-right: 5vw;
 }
 
+
+
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/close-up-black_marble_textture.jpg);
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/flat-lay-abstract-metal-background-close-up.jpg);
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/wringkled_paper_texture.jpg);
 }
 
 .images ul {
@@ -210,11 +208,13 @@ button:focus-within {
 }
 
 .h1-sample {
+  font-family: 'MedievalSharp', cursive;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
 .h2-sample {
+  font-family: 'MedievalSharp', cursive;
   font-family: var(--secondary-font);
   font-style: italic;
   font-size: 1.25rem;
